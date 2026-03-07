@@ -11,5 +11,83 @@ html {
 
 /*Variaveis de Cores e Fontes*/
 :root {
+    --color1: #07f9a2;     
+    --color2: #09c184;
+    --color3: #0a8967;
+    --color4: #0c5149;
+    --color5: #0d192b;
+}
 
+body {
+    background-color: var(--color5);
+    color: var(--color1);
+}
+
+.navegacao {
+    position: fixed;
+    top: 0;
+    background: rgba(13, 25, 43, 0.7);
+    width: 100%;
+    z-index: 100;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    justify-content: center;
+}
+
+a {
+    color: var(--color1);
+    text-decoration: none;
+}
+
+.menu-link {
+    font-weight: 500;
+    position: relative;
+    padding: 10px 0px;
+}
+
+.menu-link::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--color4);
+    transition: width 0.5s ease;
+}
+
+.menu-link:hover:after {
+    width: 100%;
+}
+
+.cabecalho {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foto-de-perfil {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0px -1px 20px 1px #07f9a2;
+    border: 4px solid rgba(7, 249, 160, 0.5);
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.paragrafo-cabecalho {
+    font-size: 2rem;
+    color: rgba(7, 249, 160, 0.5);
 }
