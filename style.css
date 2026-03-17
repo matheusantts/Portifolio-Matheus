@@ -168,3 +168,43 @@ h1 {
     color: aliceblue;
     line-height: 20px;
 }
+
+.contato {
+    padding: 96px 32px;
+}
+
+.contato-titulo {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.formulario-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--color4);
+    backdrop-filter: blur(5px);
+    padding: 32px;
+    border: 1px solid  rgba(7, 249, 160, 0.5);
+    border-radius: 16px;
+}
+
+.grupo-formulario {
+    margin-bottom: 24px;
+}
+
+.texto-formulario {
+    width: 100%;
+    padding: 16px;
+    background: var(--color4);
+    border-radius: 8px;
+    color: var(--color1);
+    border: 1px solid  rgba(7, 249, 160, 0.5);
+    outline: none;
+}
+
+.texto-formulario:focus {
+    border-color: var(--color2);
+    box-shadow: 0px -1px 20px 1px #07f9a2;
+    transition: all 0.5s ease;
+}
