@@ -252,3 +252,33 @@ h1 {
         transform: translateY(-20px);
     }
 }
+
+
+
+
+
+.ferramentas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 12px;
+}
+
+.ferramenta-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 1rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.2s;
+}
+
+.ferramenta-card:hover {
+  transform: translateY(-4px);
+}
+
+.ferramenta-card span {
+  font-size: 13px;
+  font-weight: 500;
+}
