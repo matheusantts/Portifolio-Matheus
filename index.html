@@ -1,270 +1,397 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matheus Santos — Desenvolvedor Back-End</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-  </head>
 
-  <body>
-    <div class="particulas"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matheus Santos — Desenvolvedor Back-End</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <style>
+    /* Estilo do botão de idioma (adicionado sem mexer no style.css) */
+    .botao-idioma {
+      margin-left: 12px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: transparent;
+      color: inherit;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
 
-    <!-- Barra de Navegacao -->
-    <nav class="navegacao">
-      <span class="nav-logo">ms<span class="nav-logo-dot">.</span>dev</span>
-      <ul class="menu">
-        <li><a href="#inicio" class="menu-link">início</a></li>
-        <li><a href="#sobre" class="menu-link">sobre</a></li>
-        <li><a href="#projetos" class="menu-link">projetos</a></li>
-        <li><a href="#contato" class="menu-link">contato</a></li>
-      </ul>
-    </nav>
+    .botao-idioma:hover {
+      background: rgba(255, 255, 255, 0.12);
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
 
-    <!-- Hero / Cabecalho -->
-    <main id="inicio" class="cabecalho">
-      <div class="hero-inner">
-        <div class="avatar-wrap">
-          <img
-            src="img/foto-de-perfil.jpg"
-            alt="Foto de perfil de Matheus Santos"
-            class="foto-de-perfil"
-          />
-          <div class="avatar-ring"></div>
-        </div>
+<body>
+  <div class="particulas"></div>
 
-        <div class="hero-texto">
-          <span class="hero-tag">BACK-END DEVELOPER</span>
-          <h1>Matheus Santos</h1>
-          <p class="paragrafo-cabecalho">Desenvolvedor Back-End · Ciência da Computação</p>
+  <!-- Barra de Navegacao -->
+  <nav class="navegacao">
+    <span class="nav-logo">ms<span class="nav-logo-dot">.</span>dev</span>
+    <button id="botao-idioma" class="botao-idioma" type="button" aria-label="Change language to English">EN</button>
+    <ul class="menu">
+      <li><a href="#inicio" class="menu-link">início</a></li>
+      <li><a href="#sobre" class="menu-link">sobre</a></li>
+      <li><a href="#projetos" class="menu-link">projetos</a></li>
+      <li><a href="#contato" class="menu-link">contato</a></li>
+    </ul>
+  </nav>
 
-          <div class="redes-sociais">
-            <a href="https://github.com/matheusantts" target="_blank" class="botao-social">
-              GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/matheus-santos-dev-backend/" target="_blank" class="botao-social">
-              LinkedIn
-            </a>
-            <a href="https://www.instagram.com/matheusesant/" target="_blank" class="botao-social">
-              Instagram
-            </a>
-          </div>
+  <!-- Hero / Cabecalho -->
+  <main id="inicio" class="cabecalho">
+    <div class="hero-inner">
+      <div class="avatar-wrap">
+        <img src="img/foto-de-perfil.jpg" alt="Foto de perfil de Matheus Santos" class="foto-de-perfil" />
+        <div class="avatar-ring"></div>
+      </div>
+
+      <div class="hero-texto">
+        <span class="hero-tag">FULL-STACK DEVELOPER</span>
+        <h1>Matheus Santos</h1>
+        <p class="paragrafo-cabecalho">Desenvolvedor FULL-STACK · Ciência da Computação</p>
+
+        <div class="redes-sociais">
+          <a href="https://github.com/matheusantts" target="_blank" class="botao-social">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/matheus-santos-dev-backend/" target="_blank" class="botao-social">
+            LinkedIn
+          </a>
+          <a href="https://www.instagram.com/matheusesant/" target="_blank" class="botao-social">
+            Instagram
+          </a>
+          <a href="#" target="_blank" class="botao-social">
+            Download Cúrriculo
+          </a>
         </div>
       </div>
-    </main>
+    </div>
+  </main>
 
-    <!-- Sessao Sobre Mim -->
-    <section id="sobre" class="sobre">
-      <span class="section-label">// sobre mim</span>
-      <h2 class="sobre-titulo">Quem sou eu</h2>
+  <!-- Sessao Sobre Mim -->
+  <section id="sobre" class="sobre">
+    <span class="section-label">// sobre mim</span>
+    <h2 class="sobre-titulo">Quem sou eu</h2>
+    <div class="sobre-caixa">
+      <p class="sobre-paragrafo">
+        Me chamo Matheus dos Santos, tenho 19 anos e sou natural do interior
+        de São Paulo. Concluí o ensino médio em 2024 e logo em seguida iniciei
+        cursos de programação. Atualmente estou cursando Ciência da Computação
+        na Estácio. Sempre buscando evoluir para atuar na area de desenvolvimento de software.
+      </p>
+    </div>
+
+    <div class="ferramentas-section">
+      <span class="section-label">// ferramentas</span>
       <div class="sobre-caixa">
-        <p class="sobre-paragrafo">
-          Me chamo Matheus dos Santos, tenho 19 anos e sou natural do interior
-          de São Paulo. Concluí o ensino médio em 2024 e logo em seguida iniciei
-          cursos de programação. Atualmente estou cursando Ciência da Computação
-          na Estácio.
-        </p>
-      </div>
-
-      <div class="ferramentas-section">
-        <span class="section-label">// ferramentas</span>
-        <div class="sobre-caixa">
-          <div class="ferramentas-grid">
-            <div class="ferramenta-card">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="36" height="36" />
-              <span>Git</span>
-            </div>
-            <div class="ferramenta-card">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="36" height="36" class="icon-github" />
-              <span>GitHub</span>
-            </div>
-            <div class="ferramenta-card">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="36" height="36" />
-              <span>HTML</span>
-            </div>
-            <div class="ferramenta-card">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="36" height="36" />
-              <span>CSS</span>
-            </div>
-            <div class="ferramenta-card">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="36" height="36" />
-              <span>JavaScript</span>
-            </div>
-            <div class="ferramenta-card">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" width="36" height="36" />
-              <span>C</span>
-            </div>
-            <div class="ferramenta-card">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="36" height="36" />
-              <span>Java</span>
-            </div>
-            <div class="ferramenta-card">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" width="36" height="36" />
-              <span>Linux</span>
-            </div>
-            <div class="ferramenta-card">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" alt="Ubuntu" width="36" height="36" />
-              <span>Ubuntu</span>
-            </div>
+        <div class="ferramentas-grid">
+          <div class="ferramenta-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="36"
+              height="36" />
+            <span>Git</span>
+          </div>
+          <div class="ferramenta-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+              width="36" height="36" class="icon-github" />
+            <span>GitHub</span>
+          </div>
+          <div class="ferramenta-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="36"
+              height="36" />
+            <span>HTML</span>
+          </div>
+          <div class="ferramenta-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="36"
+              height="36" />
+            <span>CSS</span>
+          </div>
+          <div class="ferramenta-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" width="36" height="36"/>
+            <span>Bootstrap</span>
+          </div>
+          <div class="ferramenta-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript" width="36" height="36" />
+            <span>JavaScript</span>
+          </div>
+          <div class="ferramenta-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" width="36"
+              height="36" />
+            <span>C</span>
+          </div>
+          <div class="ferramenta-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="36"
+              height="36" />
+            <span>Java</span>
+          </div>
+          <div class="ferramenta-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"
+              width="36" height="36" />
+            <span>Linux</span>
+          </div>
+          <div class="ferramenta-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" alt="Ubuntu"
+              width="36" height="36" />
+            <span>Ubuntu</span>
+          </div>
+          <div class="ferramenta-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" width="36" height="36" />
+            <span>VsCode</span>
+          </div>
+          <div class="ferramenta-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg" width="36" height="36" />
+            <span>Eclipse</span>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Sessao de Projetos -->
-    <section id="projetos" class="projetos">
-      <span class="section-label">// projetos</span>
-      <h2 class="projetos-titulo">Meus Projetos</h2>
-      <div class="projetos-caixa">
+  <!-- Sessao de Projetos -->
+  <section id="projetos" class="projetos">
+    <span class="section-label">// projetos</span>
+    <h2 class="projetos-titulo">Meus Projetos</h2>
+    <div class="projetos-caixa">
 
-         <a href="https://matheusantts.github.io/Ovelha-Cem/" target="_blank">
-          <div class="projetos-card">
-            <img
-              src="img/print1-ovelhacem.png"
-              alt="Projeto Ovelha Cem"
-              class="projetos-imagem"
-            />
-            <div class="caixa-textos-projetos">
-              <h3 class="info-projetos">Site Ovelha Cem</h3>
-              <p class="paragrafo-projetos">
-                 Portal de informação cristã autêntico, inspirado por uma vivência real e marcante no acampamento da Verdadeira Igreja de Cristo.
-              </p>
-              <span class="projeto-lang">Html</span>
-              <span class="projeto-lang">Css</span>
-              <span class="projeto-lang">JavaScript</span>
-            </div>
+      <a href="https://matheusantts.github.io/Ovelha-Cem/" target="_blank">
+        <div class="projetos-card">
+          <img src="img/print1-ovelhacem.png" alt="Projeto Ovelha Cem" class="projetos-imagem" />
+          <div class="caixa-textos-projetos">
+            <h3 class="info-projetos">Site Ovelha Cem</h3>
+            <p class="paragrafo-projetos">
+              Portal de informação cristã autêntico, inspirado por uma vivência real e marcante no acampamento da
+              Verdadeira Igreja de Cristo.
+            </p>
+            <span class="projeto-lang">Html</span>
+            <span class="projeto-lang">Css</span>
+            <span class="projeto-lang">JavaScript</span>
+            <span class="projeto-lang">Bootstrap</span>
           </div>
-        </a>
+        </div>
+      </a>
 
-        <a href="https://github.com/matheusantts/ProjetoMiniContaBancaria-A-Terminar" target="_blank">
-          <div class="projetos-card">
-            <img
-              src="img/mini-sistema-bancario-banner.png"
-              alt="Mini Sistema Bancário"
-              class="projetos-imagem"
-            />
-            <div class="caixa-textos-projetos">
-              <h3 class="info-projetos">Mini Sistema Bancário</h3>
-              <p class="paragrafo-projetos">
-                Aplicação que simula operações financeiras básicas em terminal.
-                Criação de contas, depósitos, saques e transferências.
-              </p>
-              <span class="projeto-lang">Java</span>
-            </div>
+      <a href="https://github.com/matheusantts/ProjetoMiniContaBancaria-A-Terminar" target="_blank">
+        <div class="projetos-card">
+          <img src="img/mini-sistema-bancario-banner.png" alt="Mini Sistema Bancário" class="projetos-imagem" />
+          <div class="caixa-textos-projetos">
+            <h3 class="info-projetos">Mini Sistema Bancário</h3>
+            <p class="paragrafo-projetos">
+              Aplicação que simula operações financeiras básicas em terminal.
+              Criação de contas, depósitos, saques e transferências.
+            </p>
+            <span class="projeto-lang">Java</span>
           </div>
-        </a>
+        </div>
+      </a>
 
-        <a href="https://github.com/matheusantts/ProjetoFaculdade-Sistema-de-Gerenciamento-de-Biblioteca" target="_blank">
-          <div class="projetos-card">
-            <img
-              src="img/sistema-gerenciamento-biblioteca-banner.png"
-              alt="Sistema de Gerenciamento de Biblioteca"
-              class="projetos-imagem"
-            />
-            <div class="caixa-textos-projetos">
-              <h3 class="info-projetos">Sistema de Gerenciamento de Biblioteca</h3>
-              <p class="paragrafo-projetos">
-                Sistema completo com cadastro de livros, usuários, empréstimos
-                e devoluções. Desenvolvido em C com CLion para a faculdade.
-              </p>
-              <span class="projeto-lang">C</span>
-            </div>
+      <a href="https://github.com/matheusantts/ProjetoFaculdade-Sistema-de-Gerenciamento-de-Biblioteca" target="_blank">
+        <div class="projetos-card">
+          <img src="img/sistema-gerenciamento-biblioteca-banner.png" alt="Sistema de Gerenciamento de Biblioteca"
+            class="projetos-imagem" />
+          <div class="caixa-textos-projetos">
+            <h3 class="info-projetos">Sistema de Gerenciamento de Biblioteca</h3>
+            <p class="paragrafo-projetos">
+              Sistema completo com cadastro de livros, usuários, empréstimos
+              e devoluções. Desenvolvido em C com CLion para a faculdade.
+            </p>
+            <span class="projeto-lang">C</span>
           </div>
-        </a>
+        </div>
+      </a>
 
+    </div>
+  </section>
+
+  <!-- Sessao de Contato -->
+  <section id="contato" class="contato">
+    <span class="section-label">// contato</span>
+    <h2 class="contato-titulo">Entre em Contato</h2>
+
+    <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)" novalidate>
+      <div class="grupo-formulario">
+        <input type="text" placeholder="Seu nome" class="texto-formulario" id="nome" required autocomplete="name" />
       </div>
-    </section>
 
-    <!-- Sessao de Contato -->
-    <section id="contato" class="contato">
-      <span class="section-label">// contato</span>
-      <h2 class="contato-titulo">Entre em Contato</h2>
+      <div class="grupo-formulario">
+        <textarea placeholder="Digite sua mensagem..." class="texto-formulario" rows="6" id="mensagem"
+          required></textarea>
+      </div>
 
-      <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)" novalidate>
-        <div class="grupo-formulario">
-          <input
-            type="text"
-            placeholder="Seu nome"
-            class="texto-formulario"
-            id="nome"
-            required
-            autocomplete="name"
-          />
-        </div>
+      <p class="form-erro" id="form-erro"></p>
 
-        <div class="grupo-formulario">
-          <textarea
-            placeholder="Digite sua mensagem..."
-            class="texto-formulario"
-            rows="6"
-            id="mensagem"
-            required
-          ></textarea>
-        </div>
+      <button type="submit" class="botao-form">Enviar pelo WhatsApp →</button>
+    </form>
+  </section>
 
-        <p class="form-erro" id="form-erro"></p>
+  <!-- Rodape -->
+  <footer class="rodape">
+    <span class="rodape-copy">© Matheus Santos</span>
+    <div class="rodape-dot"></div>
+  </footer>
 
-        <button type="submit" class="botao-form">Enviar pelo WhatsApp →</button>
-      </form>
-    </section>
+  <script>
+    function enviarWhats(event) {
+      event.preventDefault();
 
-    <!-- Rodape -->
-    <footer class="rodape">
-      <span class="rodape-copy">© 2025 Matheus Santos</span>
-      <div class="rodape-dot"></div>
-    </footer>
+      const nome = document.getElementById("nome").value.trim();
+      const mensagem = document.getElementById("mensagem").value.trim();
+      const erroEl = document.getElementById("form-erro");
 
-    <script>
-      function enviarWhats(event) {
-        event.preventDefault();
-
-        const nome = document.getElementById("nome").value.trim();
-        const mensagem = document.getElementById("mensagem").value.trim();
-        const erroEl = document.getElementById("form-erro");
-
-        // Validacao
-        if (!nome || !mensagem) {
-          erroEl.textContent = "Por favor, preencha seu nome e a mensagem antes de enviar.";
-          return;
-        }
-
-        erroEl.textContent = "";
-
-        const telefone = "5518976000903";
-        const texto = `Olá! Me chamo ${nome}. ${mensagem}`;
-        const msgFormatada = encodeURIComponent(texto);
-        const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
-
-        window.open(url, "_blank");
-
-        // Limpa o formulario apos envio
-        document.getElementById("formulario").reset();
+      // Validacao
+      if (!nome || !mensagem) {
+        erroEl.textContent = "Por favor, preencha seu nome e a mensagem antes de enviar.";
+        return;
       }
 
-      // Destaca link ativo no menu ao rolar
-      const sections = document.querySelectorAll("section[id], main[id]");
-      const links = document.querySelectorAll(".menu-link");
+      erroEl.textContent = "";
 
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              links.forEach((link) => {
-                link.classList.remove("ativo");
-                if (link.getAttribute("href") === "#" + entry.target.id) {
-                  link.classList.add("ativo");
-                }
-              });
-            }
-          });
+      const telefone = "5518976000903";
+      const texto = `Olá! Me chamo ${nome}. ${mensagem}`;
+      const msgFormatada = encodeURIComponent(texto);
+      const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+
+      window.open(url, "_blank");
+
+      // Limpa o formulario apos envio
+      document.getElementById("formulario").reset();
+    }
+
+    // Destaca link ativo no menu ao rolar
+    const sections = document.querySelectorAll("section[id], main[id]");
+    const links = document.querySelectorAll(".menu-link");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            links.forEach((link) => {
+              link.classList.remove("ativo");
+              if (link.getAttribute("href") === "#" + entry.target.id) {
+                link.classList.add("ativo");
+              }
+            });
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+  </script>
+
+  <!-- Script de tradução (PT-BR <-> EN) - adicionado sem alterar o restante do código -->
+  <script>
+    (function () {
+      const botaoIdioma = document.getElementById("botao-idioma");
+      let idiomaIngles = false;
+
+      // Grupos de elementos com texto, na mesma ordem em que aparecem na página
+      const gruposDeTexto = [
+        {
+          el: document.querySelectorAll(".menu-link"),
+          en: ["home", "about", "projects", "contact"]
         },
-        { threshold: 0.4 }
-      );
+        {
+          el: [document.querySelector(".paragrafo-cabecalho")],
+          en: ["Full-Stack Developer · Computer Science"]
+        },
+        {
+          el: document.querySelectorAll(".botao-social"),
+          en: ["GitHub", "LinkedIn", "Instagram", "Download Resume"]
+        },
+        {
+          el: document.querySelectorAll(".section-label"),
+          en: ["// about me", "// tools", "// projects", "// contact"]
+        },
+        {
+          el: [document.querySelector(".sobre-titulo")],
+          en: ["Who I am"]
+        },
+        {
+          el: [document.querySelector(".sobre-paragrafo")],
+          en: [
+            "My name is Matheus dos Santos, I'm 19 years old and I'm from the countryside of São Paulo. I finished high school in 2024 and soon after started taking programming courses. I'm currently studying Computer Science at Estácio, always looking to grow and work in the software development field."
+          ]
+        },
+        {
+          el: [document.querySelector(".projetos-titulo")],
+          en: ["My Projects"]
+        },
+        {
+          el: document.querySelectorAll(".info-projetos"),
+          en: ["Ovelha Cem Website", "Mini Banking System", "Library Management System"]
+        },
+        {
+          el: document.querySelectorAll(".paragrafo-projetos"),
+          en: [
+            "Authentic Christian information portal, inspired by a real and remarkable experience at the True Church of Christ's camp.",
+            "Application that simulates basic banking operations in the terminal. Account creation, deposits, withdrawals and transfers.",
+            "Complete system with book and user registration, loans and returns. Built in C using CLion for college."
+          ]
+        },
+        {
+          el: [document.querySelector(".contato-titulo")],
+          en: ["Get in Touch"]
+        },
+        {
+          el: [document.querySelector(".botao-form")],
+          en: ["Send via WhatsApp →"]
+        }
+      ];
 
-      sections.forEach((section) => observer.observe(section));
-    </script>
-  </body>
+      // Guarda o texto original em português de cada elemento
+      gruposDeTexto.forEach((grupo) => {
+        grupo.pt = Array.from(grupo.el).map((el) => (el ? el.textContent : ""));
+      });
+
+      // Campos com placeholder para traduzir
+      const placeholders = [
+        { el: document.getElementById("nome"), en: "Your name" },
+        { el: document.getElementById("mensagem"), en: "Type your message..." }
+      ];
+      placeholders.forEach((item) => {
+        item.pt = item.el ? item.el.placeholder : "";
+      });
+
+      function alternarIdioma() {
+        idiomaIngles = !idiomaIngles;
+
+        gruposDeTexto.forEach((grupo) => {
+          Array.from(grupo.el).forEach((el, i) => {
+            if (!el) return;
+            el.textContent = idiomaIngles ? grupo.en[i] : grupo.pt[i];
+          });
+        });
+
+        placeholders.forEach((item) => {
+          if (!item.el) return;
+          item.el.placeholder = idiomaIngles ? item.en : item.pt;
+        });
+
+        document.documentElement.lang = idiomaIngles ? "en" : "pt-br";
+        botaoIdioma.textContent = idiomaIngles ? "PT" : "EN";
+        botaoIdioma.setAttribute(
+          "aria-label",
+          idiomaIngles ? "Mudar idioma para Português" : "Change language to English"
+        );
+      }
+
+      if (botaoIdioma) {
+        botaoIdioma.addEventListener("click", alternarIdioma);
+      }
+    })();
+  </script>
+</body>
+
 </html>
